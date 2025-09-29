@@ -47,7 +47,7 @@ const projects = [
     title: "Portfolio Website",
     image: portfolioImg,
     desc: "Portfolio website showcasing projects, skills, and contact information. Features a clean, modern design with responsive layout and smooth animations to enhance user experience." ,
-    link: "https://github.com/Neha-Gautam1/Chat-App"
+    link: "https://github.com/Neha-Gautam1/Porfolio"
   },
 ];
 
