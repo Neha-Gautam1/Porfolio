@@ -10,7 +10,7 @@ const achievements = [
   },
   {
     title: "LeetCode",
-    desc: "Ranked in the Top 20% of global participants by consistently solving data structure and algorithm problems.",
+    desc: "Ranked in the Top 13% of global participants by consistently solving data structure and algorithm problems.",
     icon: <FaMedal className="text-yellow-500 w-10 h-10" />,
     link: "https://leetcode.com/u/developer_neha/",
   },
