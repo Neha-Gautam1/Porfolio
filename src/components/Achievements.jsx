@@ -3,17 +3,18 @@ import { FaCode, FaMedal } from "react-icons/fa";
 
 const achievements = [
   {
+    title: "LeetCode",
+    desc: "Ranked in the Top 7.53% of global participants by consistently solving data structure and algorithm problems.",
+    icon: <FaMedal className="text-yellow-500 w-10 h-10" />,
+    link: "https://leetcode.com/u/developer_neha/",
+  },
+  {
     title: "CodeChef",
     desc: "Achieved a 2★ rating by solving algorithmic challenges and strengthening problem-solving skills.",
     icon: <FaCode className="text-orange-500 w-10 h-10" />,
     link: "https://www.codechef.com/users/neha_gautam_23",
   },
-  {
-    title: "LeetCode",
-    desc: "Ranked in the Top 13% of global participants by consistently solving data structure and algorithm problems.",
-    icon: <FaMedal className="text-yellow-500 w-10 h-10" />,
-    link: "https://leetcode.com/u/developer_neha/",
-  },
+ 
 ];
 
 export default function Achievements() {
