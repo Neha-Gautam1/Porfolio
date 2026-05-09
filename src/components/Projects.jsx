@@ -9,6 +9,13 @@ import portfolioImg from "../assets/portfolio.jpg";
 
 const projects = [
   {
+  title: "MentEdge - Intern Mentor Connect Platform",
+  image: mentedgeImg,
+  desc: "Developed and contributed to an intern-mentor connect platform during internship, enabling seamless communication, mentorship tracking, project collaboration, and internship management with responsive UI and secure authentication.",
+  tech: "React.js, Node.js, Express.js, MongoDB, TailwindCSS",
+  link: "https://mentedge.com/"
+},
+  {
     title: "School Management System",
     image: schoolMgmtImg,
     desc: "Comprehensive school management system with roles for Admin, Teacher, Student, and Parent. Features attendance tracking, grade management, and communication between stakeholders with role-based authentication and authorization.",
