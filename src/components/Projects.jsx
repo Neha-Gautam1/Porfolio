@@ -3,6 +3,7 @@ import schoolMgmtImg from "../assets/schoolImg.jpg";
 import medicalStoreImg from "../assets/medicalImg.jpg";
 import plantNurseryImg from "../assets/nurseryImg.jpg";
 import listingWebsiteImg from "../assets/listingWebsiteImg.jpeg";
+import mentedgeImg from "../assets/mentedge.jpg";
 import chatAppImg from "../assets/chatApp.jpeg";
 import { HiArrowRight } from "react-icons/hi";
 import portfolioImg from "../assets/portfolio.jpg";
