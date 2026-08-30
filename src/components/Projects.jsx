@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import schoolMgmtImg from "../assets/schoolImg.jpg";
 import medicalStoreImg from "../assets/medicalImg.jpg";
-import careerPilotImg from "../assets/careerPilot.jpg";
-import loveBabbarRagImg from "../assets/loveBabbarRag.jpg";
+import careerPilotImg from "../assets/careerPilotImg.jpg";
+import loveBabbarRagImg from "../assets/loveBabbarRagImg.jpg";
 import mentedgeImg from "../assets/mentedge.jpg";
 import chatAppImg from "../assets/chatApp.jpeg";
 import { HiArrowRight } from "react-icons/hi";
