@@ -1,8 +1,9 @@
+
 import { motion } from "framer-motion";
 import schoolMgmtImg from "../assets/schoolImg.jpg";
 import medicalStoreImg from "../assets/medicalImg.jpg";
-import plantNurseryImg from "../assets/nurseryImg.jpg";
-import listingWebsiteImg from "../assets/listingWebsiteImg.jpeg";
+// import careerPilotImg from "../assets/careerPilot.jpg";
+// import loveBabbarRagImg from "../assets/loveBabbarRag.jpg";
 import mentedgeImg from "../assets/mentedge.jpg";
 import chatAppImg from "../assets/chatApp.jpeg";
 import { HiArrowRight } from "react-icons/hi";
@@ -10,12 +11,12 @@ import portfolioImg from "../assets/portfolio.jpg";
 
 const projects = [
   {
-  title: "MentEdge - Intern Mentor Connect Platform",
-  image: mentedgeImg,
-  desc: "Developed and contributed to an intern-mentor connect platform during internship, enabling seamless communication, mentorship tracking, project collaboration, and internship management with responsive UI and secure authentication.",
-  tech: "React.js, Node.js, Express.js, MongoDB, TailwindCSS",
-  link: "https://mentedge.com/"
-},
+    title: "MentEdge - Intern Mentor Connect Platform",
+    image: mentedgeImg,
+    desc: "Developed and contributed to an intern-mentor connect platform during internship, enabling seamless communication, mentorship tracking, project collaboration, and internship management with responsive UI and secure authentication.",
+    tech: "React.js, Node.js, Express.js, MongoDB, TailwindCSS",
+    link: "https://mentedge.com/"
+  },
   {
     title: "School Management System",
     image: schoolMgmtImg,
@@ -31,18 +32,18 @@ const projects = [
     link: "https://github.com/Neha-Gautam1/CodeShape-IT-Solutions"
   },
   {
-    title: "Plant Nursery",
-    image: plantNurseryImg,
-    desc: "Online plant nursery platform with role-based access for Admin, User, and Delivery. Admin manages products and orders, users browse and purchase plants, and delivery personnel update order status.",
-    tech: "MERN Stack, TailwindCSS, JWT Authentication",
-    link: "https://plantllyy.netlify.app/"
+    title: "CareerPilot - AI Career Assistant",
+    // image: careerPilotImg,
+    desc: "AI-powered career assistant that helps users explore career opportunities, analyze job roles, improve resumes, and receive personalized career guidance through an interactive interface.",
+    tech: "Python, Streamlit, Generative AI, NLP",
+    link: "https://career-pilotai-4rkwfjsc5eukuqrpuutubx.streamlit.app/"
   },
   {
-    title: "Listing Website",
-    image: listingWebsiteImg,
-    desc: "Dynamic listing platform allowing users to add, edit, or delete listings. Features authentication, authorization, and a responsive, user-friendly interface for managing content efficiently.",
-    tech: "MERN Stack, TailwindCSS, JWT Authentication",
-    link: "https://github.com/Neha-Gautam1/Wanderlust-Listing-Site"
+    title: "YouTube Playlist RAG Revision Assistant",
+    // image: loveBabbarRagImg,
+    desc: "RAG-based learning assistant that converts educational YouTube playlist content into a searchable knowledge base, allowing users to ask questions and quickly revise concepts using relevant information retrieved from the playlist.",
+    tech: "Python, RAG, LangChain, Hugging Face, FAISS, Sentence Transformers, YouTube Transcript API",
+    // link: "YOUR_LOVE_BABBAR_PROJECT_LINK"
   },
   {
     title: "Chat App",
@@ -54,7 +55,8 @@ const projects = [
   {
     title: "Portfolio Website",
     image: portfolioImg,
-    desc: "Portfolio website showcasing projects, skills, and contact information. Features a clean, modern design with responsive layout and smooth animations to enhance user experience." ,
+    desc: "Portfolio website showcasing projects, skills, and contact information. Features a clean, modern design with responsive layout and smooth animations to enhance user experience.",
+    tech: "React.js, TailwindCSS, Framer Motion",
     link: "https://github.com/Neha-Gautam1/Porfolio"
   },
 ];
@@ -82,28 +84,39 @@ export default function Projects() {
             whileHover={{ scale: 1.03 }}
           >
             {/* Project Image */}
-            <img src={proj.image} alt={proj.title} className="w-full h-48 object-cover" />
+            <img
+              src={proj.image}
+              alt={proj.title}
+              className="w-full h-48 object-cover"
+            />
 
             {/* Project Info */}
             <div className="p-6 text-left flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">{proj.title}</h3>
-              <p className="text-gray-700 mb-3 leading-relaxed flex-1">{proj.desc}</p>
-              <p className="text-indigo-600 font-semibold mb-4">Tech Stack: {proj.tech}</p>
-              
-              {/* View Project Button */}
-             <a
-  href={proj.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-auto inline-flex items-center gap-2 px-4 py-2 
-             bg-gradient-to-r from-blue-500 to-purple-500 text-white 
-             text-sm font-medium rounded-lg shadow-md hover:opacity-90 
-             transition w-auto self-start"
->
-  View Project
-  <HiArrowRight className="w-4 h-4" />
-</a>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                {proj.title}
+              </h3>
 
+              <p className="text-gray-700 mb-3 leading-relaxed flex-1">
+                {proj.desc}
+              </p>
+
+              <p className="text-indigo-600 font-semibold mb-4">
+                Tech Stack: {proj.tech}
+              </p>
+
+              {/* View Project Button */}
+              <a
+                href={proj.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-2 px-4 py-2 
+                           bg-gradient-to-r from-blue-500 to-purple-500 text-white 
+                           text-sm font-medium rounded-lg shadow-md hover:opacity-90 
+                           transition w-auto self-start"
+              >
+                View Project
+                <HiArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </motion.div>
         ))}
@@ -119,8 +132,6 @@ export default function Projects() {
                      bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
                      text-white text-lg font-semibold rounded-lg shadow-lg 
                      hover:opacity-90 transition"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
         >
           View More Projects
           <HiArrowRight className="w-5 h-5" />
@@ -129,3 +140,4 @@ export default function Projects() {
     </section>
   );
 }
+
