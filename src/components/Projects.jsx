@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import schoolMgmtImg from "../assets/schoolImg.jpg";
 import medicalStoreImg from "../assets/medicalImg.jpg";
-// import careerPilotImg from "../assets/careerPilot.jpg";
-// import loveBabbarRagImg from "../assets/loveBabbarRag.jpg";
+import careerPilotImg from "../assets/careerPilot.jpg";
+import loveBabbarRagImg from "../assets/loveBabbarRag.jpg";
 import mentedgeImg from "../assets/mentedge.jpg";
 import chatAppImg from "../assets/chatApp.jpeg";
 import { HiArrowRight } from "react-icons/hi";
@@ -33,14 +33,14 @@ const projects = [
   },
   {
     title: "CareerPilot - AI Career Assistant",
-    // image: careerPilotImg,
+    image: careerPilotImg,
     desc: "AI-powered career assistant that helps users explore career opportunities, analyze job roles, improve resumes, and receive personalized career guidance through an interactive interface.",
     tech: "Python, Streamlit, Generative AI, NLP",
     link: "https://career-pilotai-4rkwfjsc5eukuqrpuutubx.streamlit.app/"
   },
   {
     title: "YouTube Playlist RAG Revision Assistant",
-    // image: loveBabbarRagImg,
+    image: loveBabbarRagImg,
     desc: "RAG-based learning assistant that converts educational YouTube playlist content into a searchable knowledge base, allowing users to ask questions and quickly revise concepts using relevant information retrieved from the playlist.",
     tech: "Python, RAG, LangChain, Hugging Face, FAISS, Sentence Transformers, YouTube Transcript API",
     // link: "YOUR_LOVE_BABBAR_PROJECT_LINK"
