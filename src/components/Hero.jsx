@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profilePic from "../assets/profile.jpg"; // Add your profile picture in assets folder
-import resumeFile from "../assets/Neha.pdf"; // Add your resume in assets folder
+import resumeFile from "../assets/Neha_Resume_SDE.pdf"; // Add your resume in assets folder
 
 export default function Hero() {
   return (
