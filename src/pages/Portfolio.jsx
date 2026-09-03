@@ -12,6 +12,7 @@ import Education from "../components/Education";
 import Languages from "../components/Languages";
 import Specialization from "../components/Specialization";
 import Tools from "../components/Tools";
+import ChatAssistant from "../components/ai-assistant/ChatAssistant";
 
 export default function Portfolio() {
   return (
@@ -48,6 +49,9 @@ export default function Portfolio() {
 
       {/* Footer */}
       <Footer />
+
+      {/* AI Recruiter Assistant — floating widget, doesn't affect page layout/scroll */}
+      <ChatAssistant />
     </div>
   );
 }
