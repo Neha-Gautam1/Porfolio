@@ -9,7 +9,7 @@ import SuggestedQuestions from "./SuggestedQuestions";
 
 // Set VITE_API_URL in .env for production (Part 10); defaults to the local
 // FastAPI dev server (rag/api/server.py, started with `uvicorn api.server:app`).
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.API_URL || "http://localhost:8000";
 
 export default function ChatAssistant() {
   const [isOpen, setIsOpen] = useState(false);
